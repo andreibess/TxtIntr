@@ -6,9 +6,9 @@ SRC = calculator.cpp
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-→$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
 clean:
-→rm -f $(TARGET)
+	rm -f $(TARGET)
 
 .PHONY: all clean
